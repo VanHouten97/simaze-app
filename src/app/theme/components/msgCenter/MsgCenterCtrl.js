@@ -28,32 +28,32 @@
     $scope.notifications = [
       {
         userId: 0,
-        template: '&name posted a new article.',
+        template: '&name Nova residência cadastrada',
         time: '1 min ago'
       },
       {
         userId: 1,
-        template: '&name changed his contact information.',
+        template: '&name Nova residência cadastrada',
         time: '2 hrs ago'
       },
       {
         image: 'assets/img/shopping-cart.svg',
-        template: 'New orders received.',
+        template: 'Equipamentos novos adquiridos',
         time: '5 hrs ago'
       },
       {
         userId: 2,
-        template: '&name replied to your comment.',
+        template: '&name Ciclo Finalizado',
         time: '1 day ago'
       },
       {
         userId: 3,
-        template: 'Today is &name\'s birthday.',
+        template: 'Hoje é o aniversário de &name',
         time: '2 days ago'
       },
       {
         image: 'assets/img/comments.svg',
-        template: 'New comments on your post.',
+        template: 'Parabéns pelo excelente trabalho',
         time: '3 days ago'
       },
       {
@@ -66,37 +66,37 @@
     $scope.messages = [
       {
         userId: 3,
-        text: 'After you get up and running, you can place Font Awesome icons just about...',
+        text: 'Pedro assim que você retornar a prefeitura, gentileza levar os relatórios do LIRAa...',
         time: '1 min ago'
       },
       {
         userId: 0,
-        text: 'You asked, Font Awesome delivers with 40 shiny new icons in version 4.2.',
+        text: 'Entendido, iremos finalizar o ciclo ainda hoje',
         time: '2 hrs ago'
       },
       {
         userId: 1,
-        text: 'Want to request new icons? Here\'s how. Need vectors or want to use on the...',
+        text: 'Nenhum vetor foi encontrado na casa, devemos continuar o levantamento?',
         time: '10 hrs ago'
       },
       {
         userId: 2,
-        text: 'Explore your passions and discover new ones by getting involved. Stretch your...',
+        text: 'Alguma dúvida a mais que nós da Zootek podemos ajudar?',
         time: '1 day ago'
       },
       {
         userId: 3,
-        text: 'Get to know who we are - from the inside out. From our history and culture, to the...',
+        text: 'Entendido',
         time: '1 day ago'
       },
       {
         userId: 1,
-        text: 'Need some support to reach your goals? Apply for scholarships across a variety of...',
+        text: 'Foi recusado a residência, já fiz a notificação no sistema',
         time: '2 days ago'
       },
       {
         userId: 0,
-        text: 'Wrap the dropdown\'s trigger and the dropdown menu within .dropdown, or...',
+        text: 'As casas já foram cadastradas, não tivemos nenhum problema',
         time: '1 week ago'
       }
     ];

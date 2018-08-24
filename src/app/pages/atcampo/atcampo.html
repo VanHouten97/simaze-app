@@ -9,25 +9,31 @@
         </div>
     </div>
 
-
-    <div class="row">
-        <div class="col-md-4">
-            <div
-                ba-panel
-                ba-panel-class="tabs-panel medium-panel">
-                <div ng-include="''"></div>
+    <section ng-controller="chartistCtrl" class="chartist">
+      <div class="row">
+        <div class="col-md-6">
+          <div ba-panel ba-panel-title="Acompanhamento Atividade de Campo Mensal">
+            <div id="line-chart" class="ct-chart"></div>
             </div>
-        </div>
+          </div>
 
-        <div class="col-md-8">
-            <div
-                ba-panel
-                ba-panel-class="medium-panel">
-                <div ng-include="''"></div>
+          <div class="col-md-6">
+            <div ba-panel ba-panel-title="Selecionar Atividade">
+              <div id="line-chart" class="ct-chart"></div>
+
+              <br></br>
+                <div class="button-wrapper"><button type="button" class="btn btn-warning btn-lg">Formulário PNCD</button></div>
+
+                <div class="button-wrapper"><button type="button" class="btn btn-danger btn-lg">Formulário LIRAa</button></div>
+
+                <div class="button-wrapper"><button type="button" class="btn btn-success btn-lg">Contro. Zoonoses</button></div>
+
+                <div class="button-wrapper"><button type="button" class="btn btn-primary btn-lg">Ultra Baixo Volum.</button></div>
+                <br></br>
+                <br></br>
             </div>
+            </div>
+
         </div>
-    </div>
-
-
-
+    </section>
 </div>

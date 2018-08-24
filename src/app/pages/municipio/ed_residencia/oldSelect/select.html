@@ -1,0 +1,116 @@
+<div ng-controller="OldSelectpickerPanelCtrl as selectpickerVm">
+    <div class="form-group">
+        <select class="form-control selectpicker" selectpicker title="Standard Select"
+                ng-model="selectpickerVm.standardSelected"
+                ng-options="item as item.label for item in selectpickerVm.standardSelectItems">
+        </select>
+    </div>
+    <div class="form-group">
+        <select class="form-control selectpicker with-search" data-live-search="true" title="Select With Search"
+                selectpicker
+                ng-model="selectpickerVm.searchSelectedItem"
+                ng-options="item as item.label for item in selectpickerVm.selectWithSearchItems">
+        </select>
+    </div>
+    <div class="form-group">
+        <select class="form-control selectpicker" title="Option Types" selectpicker>
+            <option>Standard option</option>
+            <option data-subtext="option subtext">Option with subtext</option>
+            <option disabled>Disabled Option</option>
+            <option data-icon="glyphicon-heart">Option with cion</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <select class="form-control selectpicker" disabled title="Disabled Select" selectpicker>
+            <option>Dados Cadastrais</option>
+            <option>Moradores</option>
+            <option>Vegetação e Animais</option>
+        </select>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="form-group">
+                <select class="form-control" title="Select with Option Groups" selectpicker
+                        ng-model="selectpickerVm.groupedSelectedItem"
+                        ng-options="item as item.label group by item.group for item in selectpickerVm.groupedSelectItems">
+                </select>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="form-group">
+                <select class="form-control" title="Select with Divider" selectpicker>
+                    <option>Residência 1 - Vale das Palmeiras</option>
+                    <option>Residência 2 - N. S do Rosário</option>
+                    <option data-divider="true"></option>
+                    <option>Residência 3 - Centro</option>
+                    <option>Residência 4 - Centro</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <select class="form-control" title="Multiple Select" multiple selectpicker
+                ng-model="selectpickerVm.multipleSelectedItems"
+                ng-options="item as item.label for item in selectpickerVm.standardSelectItems">
+            <option>Morador - Cleucio Martines</option>
+            <option>Morador - Daniela Martines</option>
+            <option>Morador - Pedro Martines</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <select class="form-control" title="Multiple Select with Limit" multiple data-max-options="2" selectpicker
+                ng-model="selectpickerVm.multipleSelectedItems2"
+                ng-options="item as item.label for item in selectpickerVm.standardSelectItems">
+            <option>Cachorro - Hulck</option>
+            <option>Cachorro - Fred</option>
+            <option>Cachorro - Lessi</option>
+        </select>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="form-group">
+                <select class="form-control" title="Primary Select" data-style="btn-primary" data-container="body"
+                        selectpicker>
+                    <option>CPF</option>
+                    <option>RG</option>
+                    <option>SUS</option>
+                    <option>IDENTIFICADOR</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <select class="form-control" title="Success Select" data-style="btn-success" data-container="body"
+                        selectpicker>
+                    <option>000.000.000-00</option>
+                    <option>111.111.111-11</option>
+                    <option>222.222.222-22</option>
+                    <option>333.333.333-33</option>
+                </select>
+            </div>
+
+        </div>
+        <div class="col-sm-6">
+            <div class="form-group">
+                <select class="form-control" title="Info Select" data-style="btn-info" data-container="body"
+                        selectpicker>
+                    <option>MG-00.000.000</option>
+                    <option>MG-11.111.111</option>
+                    <option>MG-22.222.222</option>
+                    <option>MG-33.333.333</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <select class="form-control" title="Danger Select" data-style="btn-danger" data-container="body"
+                        selectpicker>
+                    <option>00.000-0000</option>
+                    <option>11.111-1111</option>
+                    <option>22.222-2222</option>
+                    <option>33.333-3333</option>
+                </select>
+            </div>
+        </div>
+    </div>
+</div>
